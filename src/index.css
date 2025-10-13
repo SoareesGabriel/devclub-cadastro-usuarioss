@@ -1,0 +1,82 @@
+:root{
+  --sidebar-bg: #6f0f17;
+  --sidebar-width: 220px;
+}
+.top-bar .form-control {
+  height: 35px;        /* Altura menor */
+  font-size: 15px;     /* Fonte menor */
+  max-width: 300px;    /* Largura menor, ajuste como quiser */
+}
+.custom-profile {
+  margin-left: 10px; /* menor margem do lado esquerdo */
+  margin-right: auto; /* empurra os itens seguintes */
+}
+
+.d-none.d-sm-block .small {
+  width: 25px;
+  font-size: 13px; /* Ajuste para o tamanho desejado */
+}
+
+.d-none.d-sm-block .small.text-muted {
+  font-size: 12px; /* Menor que o nome, por exemplo */
+}
+
+/* layout */
+.sidebar {
+  padding: none;
+  width: 180px;
+  min-height: 100vh;
+  background-image: url("C:\Users\soare\OneDrive\Documentos\CADASTRO-DE-USUARIOS\devclub-cadastro-usuarios\public\Rectangle 19.png");
+  position: relative;
+}
+.logo-img {
+  width: 150px;       /* Define a largura da imagem */
+  height: auto;       /* Mantém a proporção original */
+  border-radius: 10px; /* Bordas arredondadas */
+  display: block;     /* Remove espaços extras embaixo da imagem */
+  margin: 0 auto;     /* Centraliza a imagem dentro do container */
+}
+
+
+
+.sidebar .nav-link {
+  color: rgba(255,255,255,0.9);
+  cursor: pointer;
+}
+.sidebar .nav-link.active, .sidebar .nav-link:hover {
+  background: rgba(255,255,255,0.06);
+  border-radius: 6px;
+}
+.content { background: #f6f6f6; min-height: 100vh; color: #222; }
+
+/* topbar */
+.topbar { border-bottom: 1px solid rgba(0,0,0,0.06); }
+.project-title { font-weight: 800; }
+
+/* avatar */
+.avatar { width: 40px; height: 40px; font-weight: 700; }
+
+/* card/table styles */
+.card { border-radius: 12px; }
+.table thead th { font-weight: 600; border-bottom: 2px solid rgba(0,0,0,0.05); }
+.table td, .table th { vertical-align: middle; }
+
+.d-flex.align-items-center.gap-2 button {
+font-size: 15px;
+border-radius: 25px;
+width: 150px;
+
+}
+
+.sidebar{
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  
+
+}
+
+/* responsive tweaks */
+@media (max-width: 900px) {
+  .sidebar { display: none; }
+  .app-root { background: #fff; }
+}
