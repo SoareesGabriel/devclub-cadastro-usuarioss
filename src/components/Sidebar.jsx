@@ -3,18 +3,15 @@ import { FaHome, FaBoxOpen, FaUser, FaChartPie, FaSignOutAlt } from 'react-icons
 
 export default function Sidebar() {
   return (
-    <aside className="sidebar d-flex flex-column px- py-5 text-white">
-      <div className="brand p-4">
+    <aside className="sidebar d-flex flex-column text-white">
 
-        <div className="logo-text">
+        <div className="logo-text p-3">
             <div className="logo-text">
-              <img src="Logo Estilo Calçados e acessórios PNG (1) 1.png" alt="Logo" className="logo-img" />
+              <img src="Logo Estilo Calçados e acessórios PNG (1) 1.png" class="img-fluid" alt="Logo" className="logo-img" />
             </div>
-        </div>
-
       </div>
 
-      <nav className="nav flex-column p-2">
+      <nav className="nav flex-column p-3 py-5">
         <a className="nav-link text-white d-flex align-items-center py-2"><FaHome className="me-2" /> Início</a>
         <a className="nav-link active text-white d-flex align-items-center py-2"><FaBoxOpen className="me-2" /> Produtos</a>
         <a className="nav-link text-white d-flex align-items-center py-2"><FaUser className="me-2" /> Usuário</a>

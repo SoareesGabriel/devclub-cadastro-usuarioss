@@ -23,10 +23,13 @@
 
 /* layout */
 .sidebar {
-  padding: none;
+  margin-bottom: 0;
   width: 180px;
   min-height: 100vh;
-  background-image: url("C:\Users\soare\OneDrive\Documentos\CADASTRO-DE-USUARIOS\devclub-cadastro-usuarios\public\Rectangle 19.png");
+  background-image: url("/Rectangle 19.png"); /* <-- veja observação abaixo */
+  background-size: cover;         /* Redimensiona para cobrir toda a área */
+  background-repeat: no-repeat;   /* Evita repetição */
+  background-position: center;    /* Centraliza a imagem */
   position: relative;
 }
 .logo-img {
@@ -36,6 +39,7 @@
   display: block;     /* Remove espaços extras embaixo da imagem */
   margin: 0 auto;     /* Centraliza a imagem dentro do container */
 }
+
 
 
 
@@ -58,7 +62,7 @@
 
 /* card/table styles */
 .card { border-radius: 12px; }
-.table thead th { font-weight: 600; border-bottom: 2px solid rgba(0,0,0,0.05); }
+.table thead th { font-weight: 600; border-bottom: 2px solid rgba(0,0,0,0.0); }
 .table td, .table th { vertical-align: middle; }
 
 .d-flex.align-items-center.gap-2 button {

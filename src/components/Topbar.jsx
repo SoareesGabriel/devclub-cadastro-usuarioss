@@ -16,7 +16,7 @@ export default function Topbar() {
 
   <div className="profile d-flex align-items-center">
     <div className="avatar rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center me-3">U</div>
-    <div className="d-none d-sm-block">
+    <div className=" d-sm-block">
       <div className="small">Nome do Usuario</div>
       <div className="small text-muted">usuario@email.com</div>
     </div>
