@@ -7,11 +7,14 @@
 .app-root { min-height: 100vh; display: flex; }
 .content { background: #f6f6f6; min-height: 100vh; color: #222; flex-grow: 1; }
 
-.topbar { border-bottom: 1px solid rgba(0,0,0,0.06); background: #fff; }
+.topbar { border-bottom: 1px solid rgba(0,0,0,0.06); background: #fff; 
+}
 .top-bar .form-control, .topbar .form-control {
   height: 35px;
   font-size: 15px;
   max-width: 300px;
+  border-radius: 100px;
+  
 }
 .project-title { font-weight: 800; }
 
@@ -20,21 +23,23 @@
 
 /* ===== SIDEBAR BASE & ESTILOS ===== */
 .sidebar {
-  padding: none;
-  width: 180px;
+  width: var(--sidebar-width);
   min-height: 100vh;
+  background-color: var(--sidebar-bg);
+  /* CORREÇÃO: Removi o caminho absoluto da imagem de fundo */
+  /* background-image: url("C:\Users\soare\OneDrive\Documentos\CADASTRO-DE-USUARIOS\devclub-cadastro-usuarios\public\Rectangle 19.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+
   background-image: url("C:\Users\soare\OneDrive\Documentos\CADASTRO-DE-USUARIOS\devclub-cadastro-usuarios\public\Rectangle 19.png");
-  position: relative;
+  
+  /* Adiciona transição para o movimento suave (mobile) */
+  transition: transform 0.3s ease-in-out, left 0.3s ease-in-out; 
 }
-.logo-img {
-  width: 150px;       /* Define a largura da imagem */
-  height: auto;       /* Mantém a proporção original */
-  border-radius: 10px; /* Bordas arredondadas */
-  display: block;     /* Remove espaços extras embaixo da imagem */
-  margin: 0 auto;     /* Centraliza a imagem dentro do container */
-}
-
-
+.logo-img { width: 150px; height: auto; border-radius: 10px; display: block; margin: 0 auto; }
 
 .sidebar .nav-link {
   color: rgba(255,255,255,0.9);
@@ -45,17 +50,9 @@
   background: rgba(255,255,255,0.06);
   border-radius: 6px;
 }
-.content { background: #f6f6f6; min-height: 100vh; color: #222; }
 
-/* topbar */
-.topbar { border-bottom: 1px solid rgba(0,0,0,0.06); }
-.project-title { font-weight: 800; }
-
-/* avatar */
-.avatar { width: 40px; height: 40px; font-weight: 700; }
-
-/* card/table styles */
-.card { border-radius: 12px; }
+/* ===== ESTILOS DE TABELA E CARD ===== */
+.card { border-radius: 12px; border: none; }
 .table thead th { font-weight: 600; border-bottom: 2px solid rgba(0,0,0,0.05); }
 .table td, .table th { vertical-align: middle; }
 
