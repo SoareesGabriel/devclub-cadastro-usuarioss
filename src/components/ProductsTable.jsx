@@ -68,12 +68,12 @@ export default function ProductsTable() {
         </div>
 
         <div className="d-flex justify-content-between align-items-center mt-3">
-          <div className="text-muted">Mostrando {products.length} de {products.length}</div>
           <nav>
             <ul className="pagination mb-0">
               <li className="page-item disabled"><a className="page-link">Anterior</a></li>
               <li className="page-item active"><a className="page-link">1</a></li>
               <li className="page-item"><a className="page-link">2</a></li>
+              <li className="page-item"><a className="page-link">3</a></li>
               <li className="page-item"><a className="page-link">Próximo</a></li>
             </ul>
           </nav>

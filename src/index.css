@@ -82,6 +82,32 @@
 
 .table-responsive { overflow-x: auto; } /* Garante que a tabela seja scrollável em telas pequenas */
 
+.page-link {
+  background-color: white;
+  color: #580C16;
+  border: 1px solid #580C16;
+  padding: 5px  ;
+}
+
+.page-link:hover {
+  background-color: #580C16;
+  color: white;
+}
+
+.page-item.active .page-link {
+  background-color: #580C16;
+  color: white;
+  border: 1px solid #580C16;
+}
+
+.page-item.disabled .page-link {
+  background-color: white;
+  color: #ccc;
+  border: 1px solid #ccc;
+  pointer-events: none;
+}
+
+
 
 /* ===== ESTILOS RESPONSIVOS PARA MENU DESLIZANTE ===== */
 
