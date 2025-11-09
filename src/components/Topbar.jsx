@@ -34,7 +34,7 @@ export default function Topbar({ onMenuClick }) {
     <div className="d-flex align-items-center gap-2 flex-wrap">
       <button className="btn btn-outline-secondary fs-7"><FaFilter /> Filtros</button>
       <button className="btn btn-outline-secondary fs-7 d-none d-sm-inline-block"><FaFileExport /> Exportar</button> {/* Ocultado em telas XS */}
-      <button className="btn btn-danger text-white fs-7"><FaPlus /> Criar Produto</button>
+      <button className="btn text-white fs-7"><FaPlus /> Criar Produto</button>
     </div>
   </div>
 

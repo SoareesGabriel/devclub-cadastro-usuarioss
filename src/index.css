@@ -61,6 +61,25 @@
   border-radius: 25px;
   width: 150px;
 }
+
+/* Estilo para o botão de "Criar Produto" */
+/* Usamos a classe .btn combinada com .text-white para garantir especificidade */
+.d-flex.align-items-center.gap-2 .btn.text-white {
+  /* Cor de Fundo */
+  background-color: var(--sidebar-bg, #580C16) !important; 
+  /* Cor da Borda */
+  border-color: var(--sidebar-bg, #580C16) !important;
+  /* Cor do Texto (já é branco, mas bom reforçar) */
+  color: white !important;
+}
+
+/* Estilo para o efeito de "hover" (passar o mouse) */
+.d-flex.align-items-center.gap-2 .btn.text-white:hover {
+  /* Escurecemos um pouco a cor para dar feedback visual */
+  background-color: #8c242c !important; 
+  border-color: #8c242c !important;
+}
+
 .table-responsive { overflow-x: auto; } /* Garante que a tabela seja scrollável em telas pequenas */
 
 
