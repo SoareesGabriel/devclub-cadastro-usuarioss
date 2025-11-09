@@ -20,21 +20,21 @@
 
 /* ===== SIDEBAR BASE & ESTILOS ===== */
 .sidebar {
-  width: var(--sidebar-width);
+  padding: none;
+  width: 180px;
   min-height: 100vh;
-  background-color: var(--sidebar-bg);
-  /* CORREÇÃO: Removi o caminho absoluto da imagem de fundo */
-  /* background-image: url("C:\Users\soare\OneDrive\Documentos\CADASTRO-DE-USUARIOS\devclub-cadastro-usuarios\public\Rectangle 19.png"); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  
-  /* Adiciona transição para o movimento suave (mobile) */
-  transition: transform 0.3s ease-in-out, left 0.3s ease-in-out; 
+  background-image: url("C:\Users\soare\OneDrive\Documentos\CADASTRO-DE-USUARIOS\devclub-cadastro-usuarios\public\Rectangle 19.png");
+  position: relative;
 }
-.logo-img { width: 150px; height: auto; border-radius: 10px; display: block; margin: 0 auto; }
+.logo-img {
+  width: 150px;       /* Define a largura da imagem */
+  height: auto;       /* Mantém a proporção original */
+  border-radius: 10px; /* Bordas arredondadas */
+  display: block;     /* Remove espaços extras embaixo da imagem */
+  margin: 0 auto;     /* Centraliza a imagem dentro do container */
+}
+
+
 
 .sidebar .nav-link {
   color: rgba(255,255,255,0.9);
@@ -45,9 +45,17 @@
   background: rgba(255,255,255,0.06);
   border-radius: 6px;
 }
+.content { background: #f6f6f6; min-height: 100vh; color: #222; }
 
-/* ===== ESTILOS DE TABELA E CARD ===== */
-.card { border-radius: 12px; border: none; }
+/* topbar */
+.topbar { border-bottom: 1px solid rgba(0,0,0,0.06); }
+.project-title { font-weight: 800; }
+
+/* avatar */
+.avatar { width: 40px; height: 40px; font-weight: 700; }
+
+/* card/table styles */
+.card { border-radius: 12px; }
 .table thead th { font-weight: 600; border-bottom: 2px solid rgba(0,0,0,0.05); }
 .table td, .table th { vertical-align: middle; }
 

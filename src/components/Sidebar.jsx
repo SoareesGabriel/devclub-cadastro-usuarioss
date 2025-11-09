@@ -1,24 +1,17 @@
 import React from 'react'
 import { FaHome, FaBoxOpen, FaUser, FaChartPie, FaSignOutAlt } from 'react-icons/fa'
 
-// Recebe isOpen e onClose
-export default function Sidebar({ isOpen, onClose }) {
-  
-  // Adiciona a classe 'open' se isOpen for true
-  const sidebarClasses = `sidebar d-flex flex-column px- py-5 text-white ${isOpen ? 'open' : ''}`
-
+export default function Sidebar() {
   return (
-    // Usa a classe dinâmica
-    <aside className={sidebarClasses}>
-      <div className="brand p-4">
-        <div className="logo-text">
+    <aside className="sidebar d-flex flex-column text-white">
+
+        <div className="logo-text p-3">
             <div className="logo-text">
-              <img src="Logo Estilo Calçados e acessórios PNG (1) 1.png" alt="Logo" className="logo-img" />
+              <img src="Logo Estilo Calçados e acessórios PNG (1) 1.png" class="img-fluid" alt="Logo" className="logo-img" />
             </div>
-        </div>
       </div>
 
-      <nav className="nav flex-column p-2" onClick={onClose}> {/* Fecha ao clicar em um link */}
+      <nav className="nav flex-column p-3 py-5">
         <a className="nav-link text-white d-flex align-items-center py-2"><FaHome className="me-2" /> Início</a>
         <a className="nav-link active text-white d-flex align-items-center py-2"><FaBoxOpen className="me-2" /> Produtos</a>
         <a className="nav-link text-white d-flex align-items-center py-2"><FaUser className="me-2" /> Usuário</a>
@@ -26,7 +19,7 @@ export default function Sidebar({ isOpen, onClose }) {
       </nav>
 
       <div className="mt-auto p-3">
-        <button className="btn btn-outline-light w-100" onClick={onClose}><FaSignOutAlt className="me-2" /> Sair</button>
+        <button className="btn btn-outline-light w-100"><FaSignOutAlt className="me-2" /> Sair</button>
       </div>
     </aside>
   )
